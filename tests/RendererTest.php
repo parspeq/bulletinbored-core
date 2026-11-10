@@ -80,9 +80,9 @@ function test_renderer_global_variables(): Test
     return $t;
 }
 
-function test_renderer_data_overrides_global(): Test
+function test_renderer_data_overrides_global_legacy(): Test
 {
-    $t = new Test('Renderer - Data Overrides Global');
+    $t = new Test('Renderer - Data Overrides Global (Legacy)');
 
     $tmpDir = sys_get_temp_dir() . '/bb_renderer_test_' . uniqid();
     mkdir($tmpDir, 0755, true);
@@ -109,5 +109,5 @@ register_tests(
     'test_renderer_escaping',
     'test_renderer_variable_passing',
     'test_renderer_global_variables',
-    'test_renderer_data_overrides_global'
+    'test_renderer_data_overrides_global_legacy'
 );
