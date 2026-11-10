@@ -19,6 +19,8 @@ data/backups/
 /sitemap.xml
 .roo/
 .kilo/
+.roo/
+/plans/
 
 /lang/*.php
 !/lang/en.json
